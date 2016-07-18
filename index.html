@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Xiaoxing Ye, Computer @nd Comity">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Website Collection for CUHK(SZ)</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="album.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="jumbotron text-xs-center">
+    <div class="container">
+      <img src="final-transparent.png" style="position: absolute;opacity: 0;filter: alpha(opacity=0); " />
+      <h1 class="jumbotron-heading">Website Collection for CUHK(SZ)</h1>
+      <p class="lead text-muted"> &nbsp;</p>
+      <div class="form-group row">
+        <div class="">
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button id="what-to-search" type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Google</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" id="search-google">Google</a>
+                <a class="dropdown-item" id="search-wikipedia-en">Wikipedia EN</a>
+                <a class="dropdown-item" id="search-wikipedia-cn">Wikipedia CN</a>
+                <a class="dropdown-item" id="search-library">Library</a>
+              </div>
+            </div>
+            <form id="form"><input hidden type="submit">
+              <input type="search" id="searching" class="form-control form-control-sm" aria-label="Search" placeholder="Do some search?"></form>
+            <span class="input-group-btn">
+                <button class="btn btn-primary btn-sm" type="button" id="search">Search</button>
+              </span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="text-muted">
+          Links with a star(*) need campus network.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="album text-muted">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Room Booking</h4>
+              <p class="card-text">Choose the kind of room you want to book.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="http://10.20.241.222" class="card-link">Library Discussion Rooms *</a></li>
+              <li class="list-group-item"><a href="http://10.20.241.70" class="card-link">OSA Students Activity Rooms *</a></li>
+              <li class="list-group-item"><a data-toggle="modal" data-target="#myModal" class="card-link">Others (Classrooms)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">E-Learning</h4>
+              <p class="card-text">Useful for learning in CUHK(SZ)</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="http://elearning.cuhk.edu.cn" class="card-link">Moodle</a></li>
+              <li class="list-group-item"><a href="http://portal.office.com" class="card-link">Students Email</a></li>
+              <li class="list-group-item"><a href="course.computercomity.com:81/psp/csprd/?cmd=login" class="card-link">Student Information System</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Campus Service</h4>
+              <p class="card-text">Service offered by the campus.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="http://10.20.241.111" class="card-link">Cloud Printing *</a></li>
+              <li class="list-group-item"><a href="https://116.31.95.3" class="card-link">SSL VPN</a></li>
+              <li class="list-group-item"><a href="http://www.cuhk.edu.cn/departsite/ar/cn/calender2016.html" class="card-link">Academic Calendar</a></li>
+              <li class="list-group-item"><a data-toggle="modal" data-target="#myModal-pw" class="card-link">Change CUHK(SZ) Password</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">E-Resources</h4>
+              <p class="card-text">E-Resources offered/bought by the Library.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="http://www.cnki.net/" class="card-link">CNKI</a></li>
+              <li class="list-group-item"><a href="http://www.jstor.org/" class="card-link">JSTOR</a></li>
+              <li class="list-group-item"><a href="http://www.duxiu.com/" class="card-link">读秀学术搜索</a></li>
+              <li class="list-group-item"><a href="http://www.cuhk.edu.cn/library/e_resources.html" class="card-link">Other e-resources</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">External Resources</h4>
+              <p class="card-text">External websites recommended.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="https://www.github.com" class="card-link">GitHub</a></li>
+              <li class="list-group-item"><a href="https://stackoverflow.com" class="card-link">StackOverflow</a></li>
+              <li class="list-group-item"><a href="http://www.wolframalpha.com/" class="card-link">Wolfram|Alpha</a></li>
+              <li class="list-group-item"><a href="https://qianjian.space" class="card-link">Atelo - Self-media Platform for CUHKer</a></li>
+              <li class="list-group-item"><a href="http://www.zhihu.com" class="card-link">Zhihu</a></li>
+              <li class="list-group-item"><a href="http://music.163.com" class="card-link">NetEase Music</a></li>
+              <li class="list-group-item"><a href="http://www.bilibili.com" class="card-link">Bilibili</a></li>
+              <li class="list-group-item"><a href="https://www.youtube.com" class="card-link">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Social Media</h4>
+              <p class="card-text">Social media accounts of CUHK(SZ).</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="http://www.cuhk.edu.cn" class="card-link">CUHK(SZ) Official Website</a></li>
+              <li class="list-group-item"><a href="https://www.instagram.com/cuhksz/" class="card-link">CUHK(SZ) Instagram</a></li>
+              <li class="list-group-item"><a href="https://www.facebook.com/cuhksz" class="card-link">CUHK(SZ) Facebook</a></li>
+              <li class="list-group-item"><a data-toggle="modal" data-target="#myModal-wc" class="card-link">CUHK(SZ) Wechat</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="pull-xs-right">
+        <a href="#">Back to top</a>
+      </p>
+      <p>Proudly offered by Computer @nd Comity, CUHK(SZ)<br> 
+      By CUHK(SZ)er, for CUHK(SZ)ers.<br>
+      Any suggestion? Email us: <a href="mailto:cac@link.cuhk.edu.cn">cac@link.cuhk.edu.cn</a></p>
+    </div>
+  </footer>
+
+  <!-- Classroom booking guide -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          <h4 class="modal-title" id="myModalLabel">How to book a classroom?</h4>
+        </div>
+        <div class="modal-body">
+          Just write an email to <a href="mailto:booking@cuhk.edu.cn">booking@cuhk.edu.cn</a>, including the date, time, and usage in the body.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Password guide -->
+  <div class="modal fade" id="myModal-pw" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          <h4 class="modal-title" id="myModalLabel">How to change my password?</h4>
+        </div>
+        <div class="modal-body">
+          <p>If you are in campus or using VPN, click <a href="https://rds.cuhk.edu.cn/rdweb/pages/zh-CN/password.aspx" class="card-link">Change CUHK(SZ) Password</a>.</p>
+          <p><a href="http://mail.cuhk.edu.cn/owa/auth/changepassword.aspx" class="card-link">Change CUHK(SZ) Password</a> if you are not in campus.</p>
+          <p>
+            Please be noted that, you need to change your password every 90 days, otherwises you will be unable to access your CUHK(SZ) account until the password has been reset.<br> The password should not be the same as passwords used last 3 times.<br>            At least 8 characters long, and the following 4 types of characters should be included.
+            <ul>
+              <li>Uppercase letters (A, B, C, ...)</li>
+              <li>Lowercase letters (a, b, c, ...)</li>
+              <li>Numbers (1,2,3,.....)</li>
+              <li>Special characters (! @, #,...)</li>
+            </ul>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wechat -->
+  <div class="modal fade" id="myModal-wc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          <h4 class="modal-title" id="myModalLabel">CUHK(SZ) Wechat Accounts</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            The following ids are wechat public accounts of CUHK(SZ). Search then and add them!
+            <ul>
+              <li>CUHK(SZ): <a href="weixin://profile/cuhksz2014">cuhksz2014</a></li>
+              <li>CUHK(SZ) SME: <a href="weixin://profile/cuhkszsme">cuhkszsme</a></li>
+              <li>CUHK(SZ) SSE: <a href="weixin://profile/cuhksz-sse">cuhksz-sse</a></li>
+              <li>CUHK(SZ) HSS: <a href="weixin://profile/cuhkszshss">cuhkszshss</a></li>
+              <li>CUHK(SZ) OSA: <a href="weixin://profile/cuhkszosa">cuhkszosa</a></li>
+              <li>CUHK(SZ) Students Union: <a href="weixin://profile/">cuhkszsu</a></li>
+              <li>Academic Department, CUHK(SZ) Students Union: <a href="weixin://profile/CUHKSZAD">CUHKSZAD</a></li>
+              <li>CUHK(SZ) Admissions Office: <a href="weixin://profile/CUHKSZ_AO">CUHKSZ_AO</a></li>
+
+            </ul>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/vendor/jquery.min.js"></script>
+  <script>
+    var search_option = "google";
+
+    $(document).ready(function() {
+      $("#search-google").click(function() {
+        search_option = "google";
+        $("#what-to-search").html("Google");
+      });
+      $("#search-library").click(function() {
+        search_option = "library";
+        $("#what-to-search").html("Library");
+      });
+      $("#search-wikipedia-en").click(function() {
+        search_option = "wikipedia-en";
+        $("#what-to-search").html("Wikipedia EN");
+      });
+      $("#search-wikipedia-cn").click(function() {
+        search_option = "wikipedia-cn";
+        $("#what-to-search").html("Wikipedia CN");
+      });
+
+      function open_url(url) {
+        var redirectWindow = window.open(url, '_blank');
+        redirectWindow.location;
+      }
+
+      $("#form").submit(function() {
+        $("#search").click();
+      })
+
+      $("#search").click(function() {
+        var searching = $("#searching").val();
+        console.log(search_option);
+        console.log(searching);
+        switch (search_option) {
+          case "google":
+            open_url("https://www.google.com/search?q=" + searching);
+            break;
+          case "wikipedia-en":
+            open_url("https://en.wikipedia.org/w/index.php?title=Special%3ASearch&go=Go&search=" + searching);
+            break;
+          case "wikipedia-cn":
+            open_url("https://zh.wikipedia.org/w/index.php?title=Special:搜索&fulltext=搜索&search=" + searching);
+            break;
+          case "library":
+            open_url("http://cuhksz-edu-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do?institution=86CUHKSZ&vid=86CUHKSZ&search_scope=default_scope&onCampus=false&group=GUEST&pcAvailabiltyMode=true&query=any,contains," + searching);
+            break;
+          default:
+            $.pass();
+            break;
+        }
+      });
+    })
+  </script>
+  <script src="dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
