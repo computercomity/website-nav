@@ -32,3 +32,8 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
+
+.pos-f-t a {
+  color: #000;
+  padding: .5rem .75rem;
+}
